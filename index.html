@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MemoryCard Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container w-scree h-screen relative bg-green-400 flex justify-center items-center ">
+        <div class="absolute top-0 w-60  "><img src="memory-card-game-logo.png" alt=""></div>
+        <div class="timeup absolute w-52 border-red-700 border-4 border-dashed bg h-20  bg-white text-3xl z-40 flex justify-center invisible  items-center text-red-700 font-bold ">Time is up !!!</div>
+
+        <div class="timeinput absolute invisible  bg-red-300 top-28 z-20 p-2 rounded-md gap-4 ">
+            <p class="font-bold text-xl text-purple-500">Enter Time Limit</p>
+            <input type="number" min="0" step="1">
+            <div class="set w-12 h-8 bg-blue-400 mx-auto text-2xl font-bold flex items-center justify-center rounded-md">Set</div>
+        </div>
+
+        <div class="timer absolute w-28 rounded-md h-12 bg-green-700 top-20 flex justify-center items-center text-3xl font-bold text-gray-300">00:00</div>
+        <div class="ask w-[400px] flex flex-col justify-around h-60 border-dashed border-4  border-green shadow-2xl absolute bg-green-300 z-10 ">
+              <div class="text-white text-4xl mx-auto font-semibold">Challage Your Self </div>
+              <!-- <div class="timeup absolute w-52 border-red-700 border-4 border-dashed bg h-20  bg-white text-3xl hidden justify-center left-20  items-center text-red-700 font-bold ">Time is up !!!</div> -->
+
+              <div class="flex flex-row justify-around items-center">
+                 <div class="easy w-20 h-12 bg-white text-green-300 rounded-md font-bold text-2xl flex justify-center items-center shadow-lg ">Easy</div>
+                 <div class="medium w-28 h-12 bg-white text-blue-800 rounded-md font-bold text-2xl flex justify-center items-center shadow-lg ">Medium</div>
+                 <div class="hard w-20 h-12 bg-white text-red-800 rounded-md font-bold text-2xl flex justify-center items-center shadow-lg ">Hard</div>
+              </div>
+        </div>
+        <div class="smallContainer  border-gray-400 bg-gray-100 p-4 border-2 gap-4 grid grid-cols-4 place-items-center rounded-lg">
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-1.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-2.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-3.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-4.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-5.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-6.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-7.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-8.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-1.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-2.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-3.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-4.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-5.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-6.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-7.png" alt=""></div>
+            </div>
+            <div class="box w-20 relative h-20 rounded-md shadow-lg border-2 border-white ">
+                <div class="front_view  absolute left-5 bottom-[-18px] font-bold  text-[80px]   text-green-400">?</div>
+                <div class="back_view  absolute left-1 bottom-[-0.5px] font-bold  text-[80px] invisible  text-green-400"><img src="img-8.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

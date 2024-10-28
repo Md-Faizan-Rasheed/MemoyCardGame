@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* .box .back_view img{
+    max-width: 45px;
+  }
+  .bpx .back_view{
+    transform: rotateY(-180deg);
+  }
+  .box.flip .back_view{
+    transform: rotateY(0);
+  }
+  .box.flip .front_view{
+    transform: rotateY(180deg);
+  } */
